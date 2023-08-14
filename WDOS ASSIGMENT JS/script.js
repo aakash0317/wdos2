@@ -1,5 +1,5 @@
 
-if (window.location.href == "http://127.0.0.1:5501/booking.html") {
+if (window.location.href == "https://aakash0317.github.io/wdos2/WDOS%20ASSIGMENT%20JS/booking.html") {
 
 
   const daysContainer = document.querySelector(".days"),
@@ -1591,7 +1591,7 @@ function sub()
 
 
 
-if (window.location.href == "http://127.0.0.1:5501/config.html") {
+if (window.location.href == "https://aakash0317.github.io/wdos2/WDOS%20ASSIGMENT%20JS/config.html") {
 
 
 document.getElementById("name1").innerHTML = localStorage.getItem("details-name");
