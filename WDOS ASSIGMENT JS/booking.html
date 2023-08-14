@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Booking</title>
+  <link rel="stylesheet" href="booking.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!--Google font link for the icons-->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+  <p id="mainp">BUY TICKETS</p>
+
+  <header>
+    <div class="about">
+      <div class="navbar1">
+        <nav>
+
+
+          <input type="checkbox" id="click">
+          <label for="click" class="menubar">
+            <i class="fa fa-bars"></i>
+          </label>
+          <a href="home.html"></a><button id="homme">Home</button>
+          <ul>
+            <li><a href="home.html">Tickets</a></li>
+            <li><a href="about.html">Details</a></li>
+            <li><a href="categories.html">Payment</a></li>
+
+            <li><a href="#">Confirmation</a></li>
+
+
+
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+
+
+  <!-- calender -->
+
+  <div class="container">
+    <div class="calendar">
+      <div class="header">
+        <div class="month"></div>
+        <div class="btns">
+          <div class="btn today-btn">
+            <i class="fas fa-calendar-day"></i>
+          </div>
+          <div class="btn prev-btn">
+            <i class="fas fa-chevron-left"></i>
+          </div>
+          <div class="btn next-btn">
+            <i class="fas fa-chevron-right"></i>
+          </div>
+        </div>
+      </div>
+      <div class="weekdays">
+        <div class="day">Sun</div>
+        <div class="day">Mon</div>
+        <div class="day">Tue</div>
+        <div class="day">Wed</div>
+        <div class="day">Thu</div>
+        <div class="day">Fri</div>
+        <div class="day">Sat</div>
+      </div>
+      <div class="days">
+        <!-- lets add days using js -->
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+  <!-- table -->
+
+  <div class="table1">
+    <table id="customers">
+      <tr>
+        <th>Guest Type</th>
+        <th>Normal Hour Charge ($)</th>
+        <th>Peak Hour Charge ($)</th>
+      </tr>
+      <tr>
+        <td>Foriegn Adult</td>
+        <td>10</td>
+        <td>13</td>
+      </tr>
+      <tr>
+        <td>Foriegn Child</td>
+        <td>5</td>
+        <td>8</td>
+      </tr>
+      <tr>
+        <td>SL Adult</td>
+        <td>4</td>
+        <td>6</td>
+      </tr>
+      <tr>
+        <td>SL Child</td>
+        <td>2</td>
+        <td>3</td>
+      </tr>
+
+      <tr>
+        <td>Infant</td>
+        <td>Free</td>
+        <td>Free</td>
+      </tr>
+
+    </table>
+  </div>
+
+
+  <div class="pictime" id="aa">
+    <button for="1stcheck" id="button1">07.00 am - 08.00 am</button>
+    <input onclick="time()" type="checkbox" id="1stcheck">
+
+    <button for="2stcheck" id="button2">08.00 am - 09.00 am</button>
+    <input type="checkbox" id="2stcheck" onclick="time()">
+
+    <button for="3stcheck" id="button3">09.00 am - 10.00 am</button>
+    <input type="checkbox" id="3stcheck" onclick="time()">
+    <br>
+    <button for="4stcheck-peak" id="button4">10.00 am - 11.00 am</button>
+    <input type="checkbox" id="4stcheck-peak" onclick="time()">
+
+    <button for="5stcheck-peak" id="button5">11.00 am - 12.00 pm </button>
+    <input type="checkbox" id="5stcheck-peak" onclick="time()">
+
+    <button for="6stcheck-peak" id="button6">12.00 pm - 01.00 pm</button>
+    <input type="checkbox" id="6stcheck-peak" onclick="time()">
+    <br>
+    <button for="7stcheck" id="button7">01.00 pm - 02.00 pm</button>
+    <input type="checkbox" id="7stcheck" onclick="time()">
+
+    <button for="8stcheck" id="button8">02.00 pm - 03.00 pm</button>
+    <input type="checkbox" id="8stcheck" onclick="time()">
+
+    <button for="9stcheck-peak" id="button9">03.00 pm - 04.00 pm</button>
+    <input type="checkbox" id="9stcheck-peak" onclick="time()">
+    <br>
+    <button for="10stcheck-peak" id="button10">04.00 pm - 05.00 pm</button>
+    <input type="checkbox" id="10stcheck-peak" onclick="time()">
+
+    <button for="11stcheck-peak" id="button11">05.00 pm - 06.00 pm</button>
+    <input type="checkbox" id="11stcheck-peak" onclick="time()">
+
+  </div>
+
+
+
+  <div class="full-g">
+
+    <div class="select-g">
+      <div class="g1">
+        <div class="g2">
+          <p id="p1">SL Adult</p>
+          <p id="p2">Above 15 yrs</p>
+        </div>
+        <div class="g3">
+          <button id="btn" onclick="min1()">-</button>
+          <span id="sp1"></span>
+          <button id="btn" onclick="plus1()">+</button>
+        </div>
+      </div>
+    </div>
+    <hr>
+
+    <div class="select-g">
+      <div class="g1">
+        <div class="g2">
+          <p id="p1">SL Child</p>
+          <p id="p2">5 to 14 yrs</p>
+        </div>
+        <div class="g3">
+          <button id="btn" onclick="min2()">-</button>
+          <span id="sp2"></span>
+          <button id="btn" onclick="plus2()">+</button>
+        </div>
+      </div>
+    </div>
+
+    <hr>
+    <div class="select-g">
+      <div class="g1">
+        <div class="g2">
+          <p id="p1">Foreign Adult</p>
+          <p id="p2">Above 15 yrs</p>
+        </div>
+        <div class="g3">
+          <button id="btn" onclick="min3()">-</button>
+          <span id="sp3"></span>
+          <button id="btn" onclick="plus3()">+</button>
+        </div>
+      </div>
+    </div>
+    <hr>
+
+    <div class="select-g">
+      <div class="g1">
+        <div class="g2">
+          <p id="p1">Foreign Child</p>
+          <p id="p2">5 to 14 yrs</p>
+        </div>
+        <div class="g3">
+          <button id="btn" onclick="min4()">-</button>
+          <span id="sp4"></span>
+          <button id="btn" onclick="plus4()">+</button>
+        </div>
+      </div>
+    </div>
+
+    <hr>
+    <div class="select-g">
+      <div class="g1">
+        <div class="g2">
+          <p id="p1">Infant</p>
+          <p id="p2">Under 4 yrs</p>
+        </div>
+        <div class="g3">
+          <button id="btn" onclick="min5()">-</button>
+          <span id="sp5"></span>
+          <button id="btn" onclick="plus5()">+</button>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+
+  <!-- summry table
+   -->
+
+
+  <table id="TT">
+
+    <tr>
+      <td>date</td>
+      <td></td>
+
+    </tr>
+
+    <tr>
+      <td>Time</td>
+      <td id="timee"></td>
+
+    </tr>
+    <tr>
+      <td>Duration</td>
+      <td id="du"></td>
+
+    </tr>
+    <tr id="trt1">
+      <th id="th1">Tickets</th>
+      <th id="th1">Charges</th>
+    <tr id="always">
+      <td> Foreigner Adult</td>
+      <td>$10</td>
+
+    </tr>
+    <tr style="display: none;" id="srilankan-adult">
+      <td id="sri-lankan-adult1"></td>
+      <td id="sri-lankan-adult2"></td>
+
+    </tr>
+
+    <tr style="display: none;" id="srilankan-child">
+      <td id="sri-lankan-child1"></td>
+      <td id="sri-lankan-child2"></td>
+
+    </tr>
+
+    <tr style="display: none;" id="Foreign-adult">
+      <td id="Foreign-adult-1"></td>
+      <td id="Foreign-adult-2"></td>
+
+    </tr>
+
+    <tr style="display: none;" id="Foreign-child">
+      <td id="Foreign-child-1"></td>
+      <td id="Foreign-child-2"></td>
+
+    </tr>
+
+
+    <tr id="totle">
+      <td id="tt1">Total</td>
+      <td id="tt2"></td>
+
+    </tr>
+
+  </table>
+
+
+ <a id="vv" href="details.html"> <button id="dd" onclick="next()" >Next</button></a>
+
+
+
+
+
+
+
+
+
+  <script src="script.js"></script>
+
+  <!-- footer
+   -->
+  <footer>
+    <div class="footerContainer">
+      <div class="socialIcons">
+        <a href=""><i class="fa-brands fa-facebook"></i></a>
+        <a href=""><i class="fa-brands fa-instagram"></i></a>
+        <a href=""><i class="fa-brands fa-twitter"></i></a>
+        <a href=""><i class="fa-brands fa-google-plus"></i></a>
+        <a href=""><i class="fa-brands fa-youtube"></i></a>
+      </div>
+      <div class="footerNav">
+        <ul class="list">
+          <li><a href="home.html">Home</a></li>
+          <li><a href="">News</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="about.html">Contact us</a></li>
+          <li><a href="">Our team</a></li>
+        </ul>
+      </div>
+
+    </div>
+    <div class="footerBottom">
+      <p>Copyright &copy;2023 | Designed by <span class="Designer">Aakash</span></p>
+    </div>
+  </footer>
+
+
+</body>
+
+</html>

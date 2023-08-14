@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Details</title>
+  <link rel="stylesheet" href="details.css">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+
+<body>
+
+  <p id="hed">BUY TICKETS</p>
+  <div class="main" style="display: flex; align-items: center; justify-content: center;">
+    <div>
+  <div class="detail">
+    <div class="title">Details</div>
+    <form>
+      <div class="user-details">
+        <div class="input-box">
+          <span class="details">Full Name</span>
+          <input class="bb" type="text" id="name">
+        </div>
+        <div class="input-box">
+          <span class="details">Contact Number</span>
+          <input class="bb" type="text" id="number">
+        </div>
+        <div class="input-box">
+          <span class="details">Email</span>
+          <input class="bb" type="text" id="em">
+        </div>
+        <div class="input-box">
+          <span class="details">Confirm Your Email</span>
+          <input class="bb" type="text" id="name">
+        </div>
+        <select name="gender" id="gen">
+          <option value="Gender">Select Gender</option>
+          <option value="Male">Male</option>
+          <option value="Female">Female</option>
+        </select>
+
+      </div>
+    </form>
+    <button onclick="sub()" id="newsub">SUBMIT</button>
+  </div>
+
+</div>
+  <br>
+<div>
+  <table>
+
+    <tr>
+      <td>Date</td>
+      <td></td>
+
+    </tr>
+
+    <tr>
+      <td>Time</td>
+      <td id="timee"></td>
+
+    </tr>
+    <tr>
+      <td>Duration</td>
+      <td id="du"></td>
+
+    </tr>
+
+    <tr style="display: none;" id="srilankan-adult">
+      <td id="sri-lankan-adult1"></td>
+      <td id="sri-lankan-adult2"></td>
+
+    </tr>
+
+    <tr style="display: none;" id="srilankan-child">
+      <td id="sri-lankan-child1"></td>
+      <td id="sri-lankan-child2"></td>
+
+    </tr>
+
+    <tr style="display: none;" id="Foreign-adult">
+      <td id="Foreign-adult-1"></td>
+      <td id="Foreign-adult-2"></td>
+
+    </tr>
+
+    <tr style="display: none;" id="Foreign-child">
+      <td id="Foreign-child-1"></td>
+      <td id="Foreign-child-2"></td>
+
+    </tr>
+
+
+    <tr id="totle">
+      <td id="tt1">Total</td>
+      <td id="tt2"></td>
+
+    </tr>
+
+  </table>
+  <a href="Payment.html"><button id="cc">PAY</button></a>
+
+</div>
+</div>
+
+
+
+  <script src="script.js"></script>
+<footer>
+    <div class="footerContainer">
+      <div class="socialIcons">
+        <a href=""><i class="fa-brands fa-facebook"></i></a>
+        <a href=""><i class="fa-brands fa-instagram"></i></a>
+        <a href=""><i class="fa-brands fa-twitter"></i></a>
+        <a href=""><i class="fa-brands fa-google-plus"></i></a>
+        <a href=""><i class="fa-brands fa-youtube"></i></a>
+      </div>
+      <div class="footerNav">
+        <ul class="list">
+          <li><a href="home.html">Home</a></li>
+          <li><a href="">News</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="about.html">Contact us</a></li>
+          <li><a href="">Our team</a></li>
+        </ul>
+      </div>
+
+    </div>
+    <div class="footerBottom">
+      <p>Copyright &copy;2023 | Designed by <span class="Designer">Aakash</span></p>
+    </div>
+  </footer>
+</body>
+
+</html>
