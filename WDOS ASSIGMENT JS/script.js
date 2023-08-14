@@ -1545,7 +1545,7 @@ if (window.location.href == "https://aakash0317.github.io/wdos2/WDOS%20ASSIGMENT
 
   }
 }
-if (window.location.href == "http://127.0.0.1:5501/details.html") {
+if (window.location.href == "https://aakash0317.github.io/wdos2/WDOS%20ASSIGMENT%20JS/details.html") {
 
 
 document.getElementById("sri-lankan-adult1").innerHTML = localStorage.getItem("t-name1");
